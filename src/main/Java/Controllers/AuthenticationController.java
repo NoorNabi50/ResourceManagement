@@ -19,6 +19,7 @@ public class AuthenticationController {
         return "/Login";
     }
 
+
     @GetMapping("/Login")
     public String Login(@ModelAttribute User u, Model model) {
         if (new UserService().Login(u)) {
